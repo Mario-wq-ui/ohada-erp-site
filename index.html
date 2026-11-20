@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="OHADA ERP INTEGRAL : solution de gestion et de comptabilité pour les entreprises utilisant le référentiel SYSCOHADA.">
+<meta name="theme-color" content="#101d3a">
+<title>OHADA ERP INTEGRAL | Gestion et comptabilité</title>
+<style>
+:root {
+  --navy:#101d3a;
+  --blue:#2456c5;
+  --light:#f3f6fc;
+  --text:#1b2942;
+  --muted:#63718a;
+  --white:#fff;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  background:#fff;
+  line-height:1.65;
+}
+a { text-decoration:none; }
+header {
+  background:var(--navy);
+  color:white;
+  padding:18px 7%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+.logo { font-size:20px; font-weight:800; letter-spacing:.4px; }
+.logo span { color:#8eb5ff; }
+nav { display:flex; gap:25px; flex-wrap:wrap; }
+nav a { color:#e5edff; font-size:14px; }
+nav a:hover { color:#fff; text-decoration:underline; }
+.hero {
+  background:linear-gradient(125deg,#101d3a 0%,#173d83 65%,#2456c5 100%);
+  color:white;
+  padding:95px 7% 105px;
+}
+.hero-content { max-width:850px; }
+.eyebrow {
+  color:#b9d2ff;
+  font-size:13px;
+  font-weight:bold;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+h1 {
+  font-size:clamp(36px,5vw,60px);
+  line-height:1.12;
+  margin:18px 0;
+}
+.hero p {
+  max-width:700px;
+  color:#e0eaff;
+  font-size:18px;
+}
+.button {
+  display:inline-block;
+  background:white;
+  color:#173b83;
+  padding:15px 24px;
+  border-radius:8px;
+  font-weight:bold;
+  margin-top:18px;
+}
+.button:hover { background:#eaf1ff; }
+.button-blue {
+  background:var(--blue);
+  color:white;
+}
+.button-blue:hover { background:#1945a5; }
+section { padding:70px 7%; }
+.section-heading { max-width:760px; margin-bottom:32px; }
+h2 { font-size:clamp(27px,3vw,36px); line-height:1.2; margin:0 0 15px; }
+.intro { color:var(--muted); font-size:17px; }
+.cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.card {
+  background:white;
+  border:1px solid #e1e8f3;
+  border-radius:13px;
+  padding:25px;
+  box-shadow:0 5px 18px rgba(20,45,90,.045);
+}
+.card h3 { color:var(--blue); margin-top:0; }
+.card p { color:var(--muted); margin-bottom:0; }
+.soft { background:var(--light); }
+.local-box {
+  background:white;
+  border:1px solid #dfe7f5;
+  border-left:5px solid var(--blue);
+  border-radius:10px;
+  padding:25px;
+}
+.local-box p { color:var(--muted); margin-bottom:0; }
+.steps {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:22px;
+}
+.step {
+  padding:22px;
+  background:var(--light);
+  border-radius:12px;
+}
+.step-number {
+  color:var(--blue);
+  font-weight:800;
+  font-size:14px;
+  letter-spacing:1px;
+}
+.step h3 { margin:8px 0; }
+.step p { color:var(--muted); margin-bottom:0; }
+.download-panel {
+  background:linear-gradient(120deg,#101d3a,#1d438f);
+  color:white;
+  border-radius:18px;
+  padding:42px;
+}
+.download-panel p { color:#e0eaff; }
+.download-panel .button { margin-top:12px; }
+.download-note { font-size:13px; color:#d3def3 !important; }
+footer {
+  background:#0b1429;
+  color:#cbd5e1;
+  padding:30px 7%;
+  font-size:14px;
+}
+footer p { margin:6px 0; }
+@media(max-width:700px) {
+  header { align-items:flex-start; flex-direction:column; }
+  nav { gap:14px; }
+  .hero { padding:65px 7%; }
+  section { padding:52px 7%; }
+  .download-panel { padding:27px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">OHADA <span>ERP</span> INTEGRAL</div>
+  <nav aria-label="Navigation principale">
+    <a href="#presentation">Présentation</a>
+    <a href="#fonctionnalites">Fonctionnalités</a>
+    <a href="#installation">Installation</a>
+    <a href="#telechargement">Téléchargement</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">Gestion d'entreprise et comptabilité</div>
+      <h1>Pilotez votre activité avec OHADA ERP INTEGRAL.</h1>
+      <p>
+        Une solution de gestion conçue pour accompagner les entreprises
+        qui travaillent avec le référentiel comptable SYSCOHADA.
+      </p>
+      <a class="button" href="#telechargement">Télécharger pour Windows</a>
+    </div>
+  </section>
+
+  <section id="presentation">
+    <div class="section-heading">
+      <h2>Une solution de gestion intégrée</h2>
+      <p class="intro">
+        OHADA ERP INTEGRAL rassemble dans un même environnement
+        les activités de gestion et de comptabilité de votre entreprise.
+      </p>
+    </div>
+    <div class="local-box">
+      <h3>Une installation sur votre ordinateur</h3>
+      <p>
+        L'application est installée localement sur le poste de l'entreprise.
+        Sa base de données est également hébergée dans l'environnement local
+        prévu pour l'installation. Le site Internet sert à présenter le
+        logiciel et à distribuer son installateur : il ne constitue pas
+        l'environnement de travail de l'application.
+      </p>
+    </div>
+  </section>
+
+  <section class="soft" id="fonctionnalites">
+    <div class="section-heading">
+      <h2>Les domaines de votre gestion</h2>
+      <p class="intro">
+        Un environnement de travail orienté vers les besoins de gestion
+        et de suivi comptable de l'entreprise.
+      </p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <h3>Comptabilité</h3>
+        <p>
+          Gestion des opérations comptables dans le cadre du référentiel
+          SYSCOHADA.
+        </p>
+      </article>
+      <article class="card">
+        <h3>Gestion financière</h3>
+        <p>
+          Un environnement intégré pour suivre les activités financières
+          de l'entreprise.
+        </p>
+      </article>
+      <article class="card">
+        <h3>Environnement local</h3>
+        <p>
+          Une application Windows installée sur l'ordinateur de l'entreprise,
+          avec une base de données locale.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section id="installation">
+    <div class="section-heading">
+      <h2>Préparer votre installation</h2>
+      <p class="intro">
+        Quelques informations à connaître avant de télécharger le programme.
+      </p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">01 — SYSTÈME</div>
+        <h3>Windows 10 ou 11</h3>
+        <p>Version 64 bits requise pour l'installateur proposé.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">02 — INSTALLATION</div>
+        <h3>Sur le poste de travail</h3>
+        <p>Prévoir un compte disposant des autorisations nécessaires à l'installation.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">03 — UTILISATION</div>
+        <h3>Environnement local</h3>
+        <p>L'application et sa base de données fonctionnent dans l'environnement local installé.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="telechargement">
+    <div class="download-panel">
+      <div class="eyebrow">Version Windows 1.0.0</div>
+      <h2>Téléchargez OHADA ERP INTEGRAL</h2>
+      <p>
+        Récupérez le programme d'installation pour votre ordinateur
+        Windows 10 ou Windows 11 en 64 bits.
+      </p>
+      <a class="button" href="https://github.com/Mario-wq-ui/ohada-erp-site/releases/download/v1.0.0/OHADA-ERP-INTEGRAL-Setup.exe">
+        Télécharger l'installateur Windows
+      </a>
+      <p class="download-note">
+        Le téléchargement est proposé depuis le dossier public du site.
+        L'installation nécessite les autorisations Windows appropriées.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <strong>OHADA ERP INTEGRAL</strong>
+  <p>Présentation du logiciel et téléchargement de la version Windows.</p>
+  <p>© OHADA ERP INTEGRAL — Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
